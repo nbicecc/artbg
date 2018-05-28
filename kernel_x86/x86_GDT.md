@@ -10,3 +10,9 @@ MOV,POP,LDS,lES,LSS,LGS,LFS
 CALL,JMP,RET,SYSENTER,SYSEXIT,IRET,INT
 
 ```
+## 段描述符格式
+![Segment Discriptor](https://coding.net/u/sclei/p/picb/git/raw/master/os/SegmentDiscriptor.png)
+<center>段描述符格式（图片摘自：intel用户手册）
+
+SegLimit:<br/>
+Segment Limit 指定了段限值，超过段限值的内存访问会引发异常。G标志设置为1，表示段粒度为4KBytes，设置为0表示段粒度为1Byte；除了SS段之外，任何段内访问超过段限制的内存都会引发异常#GP(general-protection),访问SS段超过限值的内存会引发异常#SS(stack-fault exception)。
