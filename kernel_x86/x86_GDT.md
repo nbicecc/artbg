@@ -1,5 +1,6 @@
 # GDT(Global descriptor table)
 ## 全局描述符表GDT
+全局描述符个数为N，则GDT的限值必须是（8*N-1）。
 ## 段描述符
 处理器中有6个段寄存器，每个段寄存器包括可见部分和不可见部分，段描述符可以有多个，在程序运行的某一时刻，只允许同时最多载入6个断描述符，要使其他的断描述符起作用需要载入断描述符的可见部分，有以下指令可以载入断描述符：
 ```asm
@@ -15,7 +16,7 @@ CALL,JMP,RET,SYSENTER,SYSEXIT,IRET,INT
 <center>段描述符格式（图片摘自：intel用户手册）<center/>
 
 SegLimit:<br/>
-Segment Limit 指定了段限值，超过段限值的内存访问会引发异常。G标志设置为1，表示段粒度为4KBytes，设置为0表示段粒度为1Byte；除了SS段之外，任何段内访问超过段限制的内存都会引发异常#GP(general-protection),访问SS段超过限值的内存会引发异常#SS(stack-fault exception)。
+Segment Limit 指定了段限值，访问超过段限值的内存会引发异常。G标志设置为1，表示段粒度为4KBytes，设置为0表示段粒度为1Byte；除了SS段之外，任何段内访问超过段限制的内存都会引发异常#GP(general-protection),访问SS段超过限值的内存会引发异常#SS(stack-fault exception)。
 
 L:<br/>
 在64位模式下，L标识需要置为1，其他情况都应该为保留位，置为零。
