@@ -16,3 +16,6 @@ CALL,JMP,RET,SYSENTER,SYSEXIT,IRET,INT
 
 SegLimit:<br/>
 Segment Limit 指定了段限值，超过段限值的内存访问会引发异常。G标志设置为1，表示段粒度为4KBytes，设置为0表示段粒度为1Byte；除了SS段之外，任何段内访问超过段限制的内存都会引发异常#GP(general-protection),访问SS段超过限值的内存会引发异常#SS(stack-fault exception)。
+
+L:<br/>
+在64位模式下，L标识需要置为1，其他情况都应该为保留位，置为零。
