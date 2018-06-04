@@ -14,7 +14,7 @@ module.exports = {
       // text为导航栏显示文字，link为路径，即文件夹名或者链接
       {text: 'Home', link: '/'},
       {text: 'About', link: '/about/'},
-      {text: 'kernel_x86', link: '/kernel_x86/'},
+      {text: 'kernel_x86', link: '/kernel_x86/x86_GDT.html'},
       {text: 'Github', link: 'https://github.com/nbicecc'},
       {text: 'Coding', link: 'https://coding.net/u/sclei'}
     ],
@@ -27,7 +27,7 @@ module.exports = {
         ['三角形引理推导加速聚类公式(Elkan算法)', '三角形引理推导加速聚类公式(Elkan算法)'],//使用数组为侧边栏起别名，前边是md名称，后边是链接显示的文字
 
         ],
-      '/kernel_x86_64/': [
+      '/kernel_x86/': [
         '',
 
         ]
