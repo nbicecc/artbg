@@ -16,13 +16,8 @@ sidebar: auto
 
 [[toc]]
 
-:tada: :100:
+$$a+b+c=z$$
 
-测试
-
-<!-- ![aaa](~@alias/me.jpg) -->
-
-这里使用了 markdown 的拓展 `[[toc]]`
 #artbg
 
 ## 引言

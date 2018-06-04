@@ -2,7 +2,8 @@
   title: 'artbg',
   description: 'Just playing around',
   head: [
-   ['link', {rel: 'icon',href: ``}]
+   ['link', {rel: 'icon',href: ``}],
+   ['script',{ src:'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML', type:'text/javascript'}]
  ],
 
   base: '/',
