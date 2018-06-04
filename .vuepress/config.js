@@ -6,8 +6,8 @@
    ['script',{ src:'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML', type:'text/javascript'}]
  ],
 
-  base: '/',
-  dest: './docs',
+  base: '/public/',
+  dest: './docs/public',
   // 主题配置
   themeConfig: {
     // 导航配置
