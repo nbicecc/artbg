@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>x86 long mode</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/9.styles.e8d57cd0.css" as="style"><link rel="preload" href="/assets/js/app.42b220ad.js" as="script"><link rel="preload" href="/assets/js/2.15920622.js" as="script"><link rel="prefetch" href="/assets/js/5.94e5a736.js"><link rel="prefetch" href="/assets/js/1.8a76e6b1.js"><link rel="prefetch" href="/assets/js/3.dca76b09.js"><link rel="prefetch" href="/assets/js/4.96084719.js"><link rel="prefetch" href="/assets/js/0.4ca05a36.js"><link rel="prefetch" href="/assets/js/6.edc4ccd0.js"><link rel="prefetch" href="/assets/js/7.a1e54ed3.js"><link rel="prefetch" href="/assets/js/8.860d191f.js">
+    <link rel="stylesheet" href="/assets/css/9.styles.e8d57cd0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><!----></div></header><div class="sidebar-mask"></div><div class="sidebar"><!----><!----></div><div class="page"><div class="content"><h1 id="x86-long-mode"><a href="#x86-long-mode" aria-hidden="true" class="header-anchor">#</a> x86 long mode</h1><h2 id="x86-与-x86-64"><a href="#x86-与-x86-64" aria-hidden="true" class="header-anchor">#</a> x86 与 x86_64</h2><h2 id="pae-paging-and-legacy-paging"><a href="#pae-paging-and-legacy-paging" aria-hidden="true" class="header-anchor">#</a> PAE-Paging and Legacy-Paging</h2><ul><li><p>传统分页模式</p></li><li><p>PAE分页模式</p></li></ul><h2 id="进入long-mode的步骤"><a href="#进入long-mode的步骤" aria-hidden="true" class="header-anchor">#</a> 进入long mode的步骤</h2><ol><li>测试是否支持CPUID</li></ol><div class="language-asm extra-class"><pre class="language-text"><code>;测试FLAGS的第21位是否为1
+pushad
+pushfd
+pop eax
+mov ecx, eax
+xor eax, 1 &lt;&lt; 21
+push eax
+popfd
+pushfd
+pop eax
+push ecx
+popfd
+mov %输出,0   ;%输出是内存区域
+xor eax,ecx
+jb nocpuid
+mov %输出,1   ;%输出是内存区域
+nocpuid:
+popad
+</code></pre></div><ol start="2"><li>测试是否支持long mode</li></ol></div><div class="content edit-link"><!----><!----></div><!----></div></div></div>
+    <script src="/assets/js/2.15920622.js" defer></script><script src="/assets/js/app.42b220ad.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>GDT(Global descriptor table)</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/9.styles.e8d57cd0.css" as="style"><link rel="preload" href="/assets/js/app.42b220ad.js" as="script"><link rel="preload" href="/assets/js/5.94e5a736.js" as="script"><link rel="prefetch" href="/assets/js/1.8a76e6b1.js"><link rel="prefetch" href="/assets/js/2.15920622.js"><link rel="prefetch" href="/assets/js/3.dca76b09.js"><link rel="prefetch" href="/assets/js/4.96084719.js"><link rel="prefetch" href="/assets/js/0.4ca05a36.js"><link rel="prefetch" href="/assets/js/6.edc4ccd0.js"><link rel="prefetch" href="/assets/js/7.a1e54ed3.js"><link rel="prefetch" href="/assets/js/8.860d191f.js">
+    <link rel="stylesheet" href="/assets/css/9.styles.e8d57cd0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><!----></div></header><div class="sidebar-mask"></div><div class="sidebar"><!----><!----></div><div class="page"><div class="content"><h1 id="gdt-global-descriptor-table"><a href="#gdt-global-descriptor-table" aria-hidden="true" class="header-anchor">#</a> GDT(Global descriptor table)</h1><h2 id="全局描述符表gdt"><a href="#全局描述符表gdt" aria-hidden="true" class="header-anchor">#</a> 全局描述符表GDT</h2><p>全局描述符个数为N，则GDT的限值必须是（8*N-1）。</p><h2 id="段描述符"><a href="#段描述符" aria-hidden="true" class="header-anchor">#</a> 段描述符</h2><p>处理器中有6个段寄存器，每个段寄存器包括可见部分和不可见部分，段描述符可以有多个，在程序运行的某一时刻，只允许同时最多载入6个断描述符，要使其他的断描述符起作用需要载入断描述符的可见部分，有以下指令可以载入断描述符：</p><div class="language-asm extra-class"><pre class="language-text"><code>MOV,POP,LDS,lES,LSS,LGS,LFS
+</code></pre></div><p>以下指令可以改变CS寄存器的值,载入代码段：</p><div class="language-asm extra-class"><pre class="language-text"><code>CALL,JMP,RET,SYSENTER,SYSEXIT,IRET,INT
+
+</code></pre></div><h2 id="段描述符格式"><a href="#段描述符格式" aria-hidden="true" class="header-anchor">#</a> 段描述符格式</h2><p><img src="https://coding.net/u/sclei/p/picb/git/raw/master/os/SegmentDiscriptor.png" alt="Segment Discriptor">
+段描述符格式（图片摘自：intel用户手册）</p><p>SegLimit:<br>
+Segment Limit 指定了段限值，访问超过段限值的内存会引发异常。G标志设置为1，表示段粒度为4KBytes，设置为0表示段粒度为1Byte；除了SS段之外，任何段内访问超过段限制的内存都会引发异常#GP(general-protection),访问SS段超过限值的内存会引发异常#SS(stack-fault exception)。</p><p>L:<br>
+在64位模式下，L标识需要置为1，其他情况都应该为保留位，置为零。</p></div><div class="content edit-link"><!----><!----></div><!----></div></div></div>
+    <script src="/assets/js/5.94e5a736.js" defer></script><script src="/assets/js/app.42b220ad.js" defer></script>
+  </body>
+</html>
