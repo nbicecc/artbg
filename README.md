@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://avatars0.githubusercontent.com/u/24380548?s=200
+heroImage: https://coding.net/u/sclei/p/picb/git/raw/master/heads/head_icon_lilei_2018.jpg
 actionText: Get Started →
 actionLink: /
 features:
@@ -24,3 +24,5 @@ $$a+b+c=z$$
 > 本仓库内容所有内容均为原创，仅用于记录和展示本人的学习记录、原创博客及项目分析，未经本人允许请勿作他用。欢迎讨论！
 
 [关于我](/about/)
+
+
