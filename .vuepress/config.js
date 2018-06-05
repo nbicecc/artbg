@@ -45,6 +45,10 @@
           'x86_IDT',
           'x86_PIC'
         ],
+        '/kernel_x86_64/': [
+          '',
+          'x86_64_long_mode',
+      ],
     },
     sidebarDepth: 2
   }
