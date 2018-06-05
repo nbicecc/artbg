@@ -6,18 +6,18 @@
     ['script', {
       src: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML',
       type: 'text/javascript', async: ''
-    }]
+    }],
 
   ],
-
 
   base: '/public/',
   dest: './docs/public',
   // 主题配置
   themeConfig: {
-    // 导航配置
+    //最后更新时间
+    lastUpdated: 'Last Updated (更新时间)',
+    //导航栏配置
     nav: [
-      // text为导航栏显示文字，link为路径，即文件夹名或者链接
       { text: 'Home', link: '/' },
       { text: 'About', link: '/about/' },
       {
