@@ -10,7 +10,7 @@
 
   ],
 
-  base: '/public/',
+  base: '/',
   dest: './docs/public',
   // 主题配置
   themeConfig: {
@@ -31,7 +31,7 @@
           }//操作系统结束
         ] 
       },//Blog结束
-      { text: 'Github', link: 'https://github.com/nbicecc' },
+      { text: 'Github', link: 'https://github.com/sclei' },
       { text: 'Coding', link: 'https://coding.net/u/sclei' }
     ],
     // 侧边栏配置,侧边栏组，不同（导航）页面对应不同的侧边栏

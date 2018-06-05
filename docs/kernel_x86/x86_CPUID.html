@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>artbg | CPUID指令</title>
+    <meta name="description" content="Just playing around">
+    <link rel="icon" href="https://coding.net/u/sclei/p/picb/git/raw/master/heads/head_icon_lilei_2018.jpg">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript" async=""></script>
+    
+    <link rel="preload" href="/assets/css/13.styles.45a2f081.css" as="style"><link rel="preload" href="/assets/js/app.58286f39.js" as="script"><link rel="preload" href="/assets/js/7.a6a8b472.js" as="script"><link rel="prefetch" href="/assets/js/1.121975b3.js"><link rel="prefetch" href="/assets/js/2.bf5ad6b1.js"><link rel="prefetch" href="/assets/js/3.598b7704.js"><link rel="prefetch" href="/assets/js/4.962257b3.js"><link rel="prefetch" href="/assets/js/5.50a35d92.js"><link rel="prefetch" href="/assets/js/6.ae323a67.js"><link rel="prefetch" href="/assets/js/0.d4424ff6.js"><link rel="prefetch" href="/assets/js/8.877281fd.js"><link rel="prefetch" href="/assets/js/9.d224e4cb.js"><link rel="prefetch" href="/assets/js/10.af1da90c.js"><link rel="prefetch" href="/assets/js/11.4107521e.js"><link rel="prefetch" href="/assets/js/12.ceeabfd4.js">
+    <link rel="stylesheet" href="/assets/css/13.styles.45a2f081.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><a href="/" class="home-link router-link-active"><!----><span class="site-name">
+      artbg
+    </span></a><div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""><!----></div><nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/about/" class="nav-link">About</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Blog</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>操作系统</h4><ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kernel_x86/" class="nav-link router-link-active">kernel_x86</a></li><li class="dropdown-subitem"><a href="/kernel_x86_64/" class="nav-link">kernel_x86_64</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/sclei" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://coding.net/u/sclei" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Coding
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav></div></header><div class="sidebar-mask"></div><div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/about/" class="nav-link">About</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Blog</span><span class="arrow right"></span></a><ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>操作系统</h4><ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/kernel_x86/" class="nav-link router-link-active">kernel_x86</a></li><li class="dropdown-subitem"><a href="/kernel_x86_64/" class="nav-link">kernel_x86_64</a></li></ul></li></ul></div></div><div class="nav-item"><a href="https://github.com/sclei" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://coding.net/u/sclei" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Coding
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><!----></nav><ul class="sidebar-links"><li><a href="/kernel_x86/" class="sidebar-link">Kernel_x86</a></li><li><a href="/kernel_x86/x86_A20.html" class="sidebar-link">/kernel_x86/x86_A20.html</a></li><li><a href="/kernel_x86/x86_CPUID.html" class="active sidebar-link">CPUID指令</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/kernel_x86/x86_CPUID.html#调用格式" class="sidebar-link">调用格式</a></li><li class="sidebar-sub-header"><a href="/kernel_x86/x86_CPUID.html#cpuid-00h" class="sidebar-link">CPUID.00H</a></li></ul></li><li><a href="/kernel_x86/x86_GDT.html" class="sidebar-link">GDT(Global descriptor table)</a></li><li><a href="/kernel_x86/x86_IDT.html" class="sidebar-link">IDT 中断描述符表</a></li><li><a href="/kernel_x86/x86_PIC.html" class="sidebar-link">PIC 可编程中断控制器</a></li></ul></div><div class="page"><div class="content"><h1 id="cpuid指令"><a href="#cpuid指令" aria-hidden="true" class="header-anchor">#</a> CPUID指令</h1><h2 id="调用格式"><a href="#调用格式" aria-hidden="true" class="header-anchor">#</a> 调用格式</h2><h2 id="cpuid-00h"><a href="#cpuid-00h" aria-hidden="true" class="header-anchor">#</a> CPUID.00H</h2><div class="language-c extra-class"><pre class="language-c"><code><span class="token comment">//cpuid.c</span>
+<span class="token keyword">struct</span> cpuid_return_struct
+<span class="token punctuation">{</span>
+  uint32_t eax<span class="token punctuation">;</span>
+  uint32_t ebx<span class="token punctuation">;</span>
+  uint32_t ecx<span class="token punctuation">;</span>
+  uint32_t edx<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">//c语言定义cpuid指令函数</span>
+<span class="token keyword">void</span> <span class="token keyword">inline</span> <span class="token function">cpuid</span><span class="token punctuation">(</span><span class="token keyword">struct</span> cpuid_return_struct <span class="token operator">*</span> cpu_fetures<span class="token punctuation">,</span>uint32_t arg_eax<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+  <span class="token keyword">asm</span><span class="token punctuation">(</span><span class="token string">&quot;pushal&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">asm</span> <span class="token keyword">volatile</span><span class="token punctuation">(</span><span class="token string">&quot;cpuid&quot;</span>
+                  <span class="token punctuation">:</span>
+                  <span class="token string">&quot;=a&quot;</span><span class="token punctuation">(</span>cpu_fetures<span class="token operator">-&gt;</span>eax<span class="token punctuation">)</span>
+                  <span class="token punctuation">,</span><span class="token string">&quot;=b&quot;</span><span class="token punctuation">(</span>cpu_fetures<span class="token operator">-&gt;</span>ebx<span class="token punctuation">)</span>
+                  <span class="token punctuation">,</span><span class="token string">&quot;=c&quot;</span><span class="token punctuation">(</span>cpu_fetures<span class="token operator">-&gt;</span>ecx<span class="token punctuation">)</span>
+                  <span class="token punctuation">,</span><span class="token string">&quot;=d&quot;</span><span class="token punctuation">(</span>cpu_fetures<span class="token operator">-&gt;</span>edx<span class="token punctuation">)</span>
+                <span class="token punctuation">:</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">(</span>arg_eax<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">asm</span><span class="token punctuation">(</span><span class="token string">&quot;popal&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment">//CPUID.00H 返回CPU的基本信息</span>
+<span class="token keyword">void</span> <span class="token function">cpuid_cpu_feature</span><span class="token punctuation">(</span><span class="token keyword">struct</span> cpuid_return_struct <span class="token operator">*</span> cpu_fetures<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+  uint32_t eax<span class="token operator">=</span><span class="token number">0x0</span><span class="token punctuation">;</span><span class="token comment">//cpuid.00H号功能，获取cpu的基本信息</span>
+  <span class="token function">cpuid</span><span class="token punctuation">(</span>cpu_fetures<span class="token punctuation">,</span>eax<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>调用cpuid.00h号功能测试cpuid指令封装的正确性</p><div class="language-c extra-class"><pre class="language-c"><code><span class="token comment">//test.c</span>
+uint32_t str<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">struct</span> cpuid_return_struct cpu_fetures<span class="token punctuation">;</span>
+<span class="token function">cpuid_cpu_feature</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>cpu_fetures<span class="token punctuation">)</span><span class="token punctuation">;</span>
+str<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> cpu_fetures<span class="token punctuation">.</span>ebx<span class="token punctuation">;</span>
+str<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> cpu_fetures<span class="token punctuation">.</span>edx<span class="token punctuation">;</span>
+str<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> cpu_fetures<span class="token punctuation">.</span>ecx<span class="token punctuation">;</span>
+<span class="token function">write_str</span><span class="token punctuation">(</span><span class="token number">0x07</span><span class="token punctuation">,</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><p>Windows 10 环境下 qemu-system-x86_64虚拟机执行结果：</p><blockquote><p>AuthenticAMD</p></blockquote></div><div class="content edit-link"><!----><div class="last-updated"><span class="prefix">Last Updated (更新时间): </span><span class="time">5/29/2018, 10:38:39 AM</span></div></div><div class="content page-nav"><p class="inner"><span class="prev">
+        ← <a href="/kernel_x86/x86_A20.html" class="prev">
+          /kernel_x86/x86_A20.html
+        </a></span><span class="next"><a href="/kernel_x86/x86_GDT.html">
+          GDT(Global descriptor table)
+        </a> →
+      </span></p></div></div></div></div>
+    <script src="/assets/js/7.a6a8b472.js" defer></script><script src="/assets/js/app.58286f39.js" defer></script>
+  </body>
+</html>
