@@ -1,15 +1,14 @@
-# set root=.\docs
-# set dist=\public
+root=./docs
+dist=/public
 
-# if exist %root% (
-#         copy %root%\CNAME .\
-#         rd /s/q %root%
-#         md %root%
-#         move .\CNAME %root%\
-#         vuepress.cmd build .
-#         xcopy /E %root%%dist%\* %root%\
-#         rd /s/q %root%%dist%
-#         rd /s/q node_modules
-# ) else (
-#     echo %root% error
-# )
+if [ ! -d "$root/CNAME" ];then
+    cp $root$CNAME .
+    rm -rf $root
+    mkdir $root
+    vuepress build .
+    cp $root$dist/* $root/
+    rm -rf node_modules
+    mv ./CNAME $docs/.
+else
+echo "No CNAME !"
+fi
