@@ -8,11 +8,23 @@
       type: 'text/javascript', async: ''
     }],
 
-  ],
+    //PWA应用支持
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    //iOS Safari支持
+    ['apple-mobile-web-app-capable', { content: "yes"}],
+    ['apple-mobile-web-app-status-bar-style', { content: "black" }],
+    ['apple-mobile-web-app-title', { content: "artbg" }],
+    ['apple-touch-icon', { href: `https://coding.net/u/sclei/p/picb/git/raw/master/heads/head_icon_lilei_2018.jpg` }],
+    //windows eage支持
+    ['msapplication-TileImage', { content: "https://coding.net/u/sclei/p/picb/git/raw/master/heads/head_icon_lilei_2018.jpg" }],
+    ['msapplication-TileColor', { content: "#FFFFFF" }],
+    //PWA应用支持 结束
 
-  base: '/',
-  dest: './docs/public',
-  // 主题配置
+],
+serviceWorker: true,
+base: '/',
+dest: './docs/public',
+// 主题配置
   themeConfig: {
     //最后更新时间
     lastUpdated: 'Last Updated (更新时间)',
