@@ -3,10 +3,6 @@
   description: 'Just playing around',
   head: [
     ['link', { rel: 'icon', href: `https://coding.net/u/sclei/p/picb/git/raw/master/heads/head_icon_lilei_2018.jpg` }],
-    ['script', {
-      src: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML',
-      type: 'text/javascript', async: ''
-    }],
 
     //PWA应用支持
     ['link', { rel: 'manifest', href: '/manifest.json' }],
@@ -19,6 +15,11 @@
     ['msapplication-TileImage', { content: "https://coding.net/u/sclei/p/picb/git/raw/master/heads/head_icon_lilei_2018.jpg" }],
     ['msapplication-TileColor', { content: "#FFFFFF" }],
     //PWA应用支持 结束
+
+    ['script', {
+      src: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML',
+      type: 'text/javascript'
+    }],
 
 ],
 serviceWorker: true,

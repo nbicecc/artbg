@@ -5,11 +5,12 @@ if exist %root% (
         copy %root%\CNAME .\
         rd /s/q %root%
         md %root%
-        move .\CNAME %root%\
+        copy .\CNAME %root%\
         vuepress.cmd build .
         xcopy /E %root%%dist%\* %root%\
         rd /s/q %root%%dist%
         rd /s/q node_modules
+        del .\CNAME
 ) else (
     echo %root% error
 )
