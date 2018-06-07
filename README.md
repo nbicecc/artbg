@@ -14,14 +14,6 @@ footer: MIT Licensed | Copyright © 2018 Lilei
 sidebar: auto
 ---
 
-[[toc]]
-
-$$a+b+c=z$$
-
-<script type="text/javascript">
-
-</script>
-
 ### 引言
 > 本仓库内容所有内容均为原创，仅用于记录和展示本人的学习记录、原创博客及项目分析，未经本人允许请勿作他用。欢迎讨论！
 
