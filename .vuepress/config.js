@@ -1,6 +1,6 @@
 ﻿module.exports = {
   title: 'artbg',
-  description: 'Just playing around',
+  description: '生命不息 学无止境',
   head: [
     ['link', { rel: 'icon', href: `https://coding.net/u/sclei/p/picb/git/raw/master/heads/head_icon_lilei_2018.jpg` }],
 
@@ -39,7 +39,8 @@
           {
             text: '操作系统', items: [
               { text: 'kernel_x86', link: '/kernel_x86/' },
-              { text: 'kernel_x86_64', link: '/kernel_x86_64/' }
+              { text: 'kernel_x86_64', link: '/kernel_x86_64/' },
+              { text: 'Linux', link: '/Linux/' }
             ]
           }//操作系统结束
           ,
@@ -50,8 +51,13 @@
           },
           {
             text: '文档', items: [
-              { text: 'markdown', link: '/document/markdown/' },
-              { text: 'mathjax', link: '/document/mathjax/' }
+              { text: 'Markdown', link: '/markdown/' },
+              { text: 'Mathjax', link: '/mathjax/' }
+            ]
+          },
+          {
+            text: '数据库', items: [
+              { text: 'SQLite', link: '/SQLite/' }
             ]
           }
 
@@ -78,6 +84,19 @@
       '/ML/': [
         '',
         ['/ML/elkan.md', 'Elkan三角形原理加速聚类算法'],
+      ],
+      '/markdown/': [
+        '',
+        'markdown1',
+      ],
+      '/SQLite/': [
+        '',
+        '1',
+        '2'
+      ],
+      '/Linux/': [
+        '',
+        '1',
       ],
     },
     sidebarDepth: 2
