@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.2.0/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "1eb1ba079c6e7273e233c9649d9db650"
+    "revision": "5235082bbde7f608a49568d89b4d1539"
   },
   {
     "url": "assets/css/19.styles.5ec65562.css",
@@ -108,84 +108,88 @@ self.__precacheManifest = [
     "revision": "cde27d4327adc6762317bdec36edd872"
   },
   {
-    "url": "assets/js/app.925ab855.js",
-    "revision": "334d483a22f3ace62b27472e0e894d28"
+    "url": "assets/js/app.93fd02e1.js",
+    "revision": "c9a27317d1a68d1736d0ce105c8a9672"
   },
   {
     "url": "index.html",
-    "revision": "299e428aaf37204e80d357782f71336d"
+    "revision": "3c0ddd1de4099fe2f4402c6aaca39590"
+  },
+  {
+    "url": "js/custom.js",
+    "revision": "f824c93bba723b1cd2436a862948725a"
   },
   {
     "url": "kernel_x86_64/index.html",
-    "revision": "c4c09ce808e42e97e68dd48e334a0938"
+    "revision": "0ab95b1c196e23f82508cdeb5eaa8f6a"
   },
   {
     "url": "kernel_x86_64/x86_64_long_mode.html",
-    "revision": "3feb3c0b303e7c409e09802a880be5a2"
+    "revision": "ed4c0d777b7596715d386e868872533f"
   },
   {
     "url": "kernel_x86/index.html",
-    "revision": "28e660a6374f833506c9adf5c59b8e8c"
+    "revision": "6e5beea992485b8cb03200c08b93d877"
   },
   {
     "url": "kernel_x86/x86_A20.html",
-    "revision": "82d24a4b075737ac308a4c8e49528c87"
+    "revision": "f54310322c817c126f2fde738740764f"
   },
   {
     "url": "kernel_x86/x86_CPUID.html",
-    "revision": "3dad8ea226c5afca9da89cc0b30dc04a"
+    "revision": "72f61015bad6e1be8da7689d564529c7"
   },
   {
     "url": "kernel_x86/x86_GDT.html",
-    "revision": "941252d45b713ba6cb3f29c612b63398"
+    "revision": "04f0b7c580b57aa295d408fbee7acdf1"
   },
   {
     "url": "kernel_x86/x86_IDT.html",
-    "revision": "e6ec0223e193cbd03baf20be65467197"
+    "revision": "351c5011356caeee1d38d410f0316dfa"
   },
   {
     "url": "kernel_x86/x86_PIC.html",
-    "revision": "563f7b654ada06435f38e50aaeaec149"
+    "revision": "1abf1c2fb5ee8829c16e80956e9fea92"
   },
   {
     "url": "Linux/1.html",
-    "revision": "8d6152085a482c439f9392e4cb192158"
+    "revision": "926aaae7470700b7c35a2610189ab46d"
   },
   {
     "url": "Linux/index.html",
-    "revision": "3aa139deceb6f6850aa4f3c84ccc778c"
+    "revision": "8b1a7179d69b02e5b8cc57c28109bb3f"
   },
   {
     "url": "markdown/index.html",
-    "revision": "2ce9920951325d9be28d1470f788fffb"
+    "revision": "c5f4c3046a0ace9864fcd64257fd106f"
   },
   {
     "url": "markdown/markdown1.html",
-    "revision": "07fe51ee4ea1e7a68f85d9740f55487b"
+    "revision": "28cb73b43b30de603adcd11271213728"
   },
   {
     "url": "mathjax/index.html",
-    "revision": "0271258374dcbfffa242772d39406272"
+    "revision": "c371796d63de0e63b9068c5f3304984b"
   },
   {
     "url": "ML/elkan.html",
-    "revision": "27a6cbc943d52a6c162a62f360b3fc79"
+    "revision": "b4dcd6bfe509b7bc55a760a9e2151111"
   },
   {
     "url": "ML/index.html",
-    "revision": "0f08f7cb94d7beef45be55b999b47a2d"
+    "revision": "2950de9cdcd7a715060eb1a3003c8c94"
   },
   {
     "url": "SQLite/1.html",
-    "revision": "557b3d341f66aefb5185d0878e6e10cc"
+    "revision": "46024532893740b7eca276014e593435"
   },
   {
     "url": "SQLite/2.html",
-    "revision": "e314e22b0efe5041562d65bf548bcefd"
+    "revision": "1d5e5a6309f8e09cae4048e2a8080033"
   },
   {
     "url": "SQLite/index.html",
-    "revision": "008df93fa34b094df6a013a5050b3b50"
+    "revision": "7ef74dd5ad835c63478bb629de98edfc"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
