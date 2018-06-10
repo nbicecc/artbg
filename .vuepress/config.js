@@ -7,13 +7,13 @@
     //PWA应用支持
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     //iOS Safari支持
-    ['apple-mobile-web-app-capable', { content: "yes" }],
-    ['apple-mobile-web-app-status-bar-style', { content: "black" }],
-    ['apple-mobile-web-app-title', { content: "artbg" }],
-    ['apple-touch-icon', { href: `https://coding.net/u/sclei/p/picb/git/raw/master/heads/head_icon_lilei_2018.jpg` }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: "yes" }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: "black" }],
+    ['meta', { name: 'apple-mobile-web-app-title', content: "artbg" }],
+    ['link', { rel: 'apple-touch-icon', href: `https://coding.net/u/sclei/p/picb/git/raw/master/heads/head_icon_lilei_2018.jpg` }],
     //windows eage支持
-    ['msapplication-TileImage', { content: "https://coding.net/u/sclei/p/picb/git/raw/master/heads/head_icon_lilei_2018.jpg" }],
-    ['msapplication-TileColor', { content: "#FFFFFF" }],
+    ['meta', { name: 'msapplication-TileImage', content: "https://coding.net/u/sclei/p/picb/git/raw/master/heads/head_icon_lilei_2018.jpg" }],
+    ['meta', { name: 'msapplication-TileColor', content: "#FFFFFF" }],
     //PWA应用支持 结束
 
     ['script', {
