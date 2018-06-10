@@ -2,18 +2,19 @@
   title: 'artbg',
   description: '生命不息 学无止境',
   head: [
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' }]
     ['link', { rel: 'icon', href: `https://coding.net/u/sclei/p/picb/git/raw/master/heads/head_icon_lilei_2018.jpg` }],
 
     //PWA应用支持
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     //iOS Safari支持
     ['meta', { name: 'apple-mobile-web-app-title', content: "artbg" }],
-    ['meta',{name:'apple-mobile-web-app-status-bar-style', content: "black" }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: "black" }],
     ['link', { rel: 'apple-touch-icon', href: `https://coding.net/u/sclei/p/picb/git/raw/master/heads/head_icon_lilei_2018.jpg` }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: "yes" }],
     //windows eage支持
-    ['meta',{name:'msapplication-TileImage', content: "https://coding.net/u/sclei/p/picb/git/raw/master/heads/head_icon_lilei_2018.jpg" }],
-    ['meta',{name:'msapplication-TileColor', content: "#FFFFFF" }],
+    ['meta', { name: 'msapplication-TileImage', content: "https://coding.net/u/sclei/p/picb/git/raw/master/heads/head_icon_lilei_2018.jpg" }],
+    ['meta', { name: 'msapplication-TileColor', content: "#FFFFFF" }],
     //PWA应用支持 结束
 
     ['script', {
