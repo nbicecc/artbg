@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.2.0/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "e4610922a7934e3f46709f58a9335c38"
+    "revision": "a2365d55a0e0056910a82f7895d9f5da"
   },
   {
     "url": "assets/css/19.styles.5ec65562.css",
@@ -108,84 +108,84 @@ self.__precacheManifest = [
     "revision": "cde27d4327adc6762317bdec36edd872"
   },
   {
-    "url": "assets/js/app.88d1ea60.js",
-    "revision": "b5d8e74459a30512044975f80080444a"
+    "url": "assets/js/app.fac7615b.js",
+    "revision": "4c59b2745aefa7bdc56ae555e9fbc766"
   },
   {
     "url": "index.html",
-    "revision": "0a62fbaea2a185d5c62af16814e86289"
+    "revision": "9e778d2351845050eccf2e9debfe42b3"
   },
   {
     "url": "kernel_x86_64/index.html",
-    "revision": "5a9a32a75474b1b53b92c099ffc39729"
+    "revision": "27eb2409a6e1606db9192b5287831c8a"
   },
   {
     "url": "kernel_x86_64/x86_64_long_mode.html",
-    "revision": "e5fdaf17c7eb23abcd9b7d6e15e3962b"
+    "revision": "3e8f790cae94ad8caba292375dd1e6f0"
   },
   {
     "url": "kernel_x86/index.html",
-    "revision": "b1835de1354648cf32d57ddaaad6a2d1"
+    "revision": "e14d05a201036e7fd6d9250e6c8f82d7"
   },
   {
     "url": "kernel_x86/x86_A20.html",
-    "revision": "e64eec96e832fedf0f9ca69b9cd7daaa"
+    "revision": "81dee76faea4a1653939262a4c53eacd"
   },
   {
     "url": "kernel_x86/x86_CPUID.html",
-    "revision": "574ec0f7999c8359f595dc610787de38"
+    "revision": "a19a7a15a08a58ea79a0b73a53170f7b"
   },
   {
     "url": "kernel_x86/x86_GDT.html",
-    "revision": "a2353e923d5b3bff9829cdf11098f60c"
+    "revision": "50cbfd9c13e5e84fae9a02753d3aaded"
   },
   {
     "url": "kernel_x86/x86_IDT.html",
-    "revision": "ae9c51a66b62a5a1903f876ed57b7cdf"
+    "revision": "7874132cd497da43a40ebf6a1d45bbcc"
   },
   {
     "url": "kernel_x86/x86_PIC.html",
-    "revision": "09b4e736d29cad8ba0ee1ac6342c54a4"
+    "revision": "76e177d483143680cd7e078d0ec788f5"
   },
   {
     "url": "Linux/1.html",
-    "revision": "47f4d0489a35e1edaff61885c42bd354"
+    "revision": "07a50da1d7b9ab340ef37d8a9d3c34fa"
   },
   {
     "url": "Linux/index.html",
-    "revision": "8fef11bb195ceaad77512165d726def6"
+    "revision": "0042d27686b2d43f5d80e4c7270de189"
   },
   {
     "url": "markdown/index.html",
-    "revision": "4121ffb46f22f43ad772837055bbf92c"
+    "revision": "0479f3fe9ed8b2ba37cd5e16f0f34341"
   },
   {
     "url": "markdown/markdown1.html",
-    "revision": "11983a0afafdaf01b70dc120542489fe"
+    "revision": "ac57fc159f6ee73b37223b799da8513e"
   },
   {
     "url": "mathjax/index.html",
-    "revision": "e07e92c171b8c56e620b56904ee1e344"
+    "revision": "ab55cd98b516e237132ebabfe1f89cc9"
   },
   {
     "url": "ML/elkan.html",
-    "revision": "840337e955ccb3f83010596c45875aad"
+    "revision": "be118861baed6a76e3317b6b9b2e72dc"
   },
   {
     "url": "ML/index.html",
-    "revision": "46efdd7be4075497b5b3ffe469a8d958"
+    "revision": "9a1edcf883d8dc77896d26a1814b00bf"
   },
   {
     "url": "SQLite/1.html",
-    "revision": "5e14e378e3c516e085499718ef1998fd"
+    "revision": "4409b62e6830c6c2c54d048b90dc6b35"
   },
   {
     "url": "SQLite/2.html",
-    "revision": "b06f250e24a05957c9a912e60686d349"
+    "revision": "d4205d38081be9af06b17133f5a2e80f"
   },
   {
     "url": "SQLite/index.html",
-    "revision": "81a5171e8df19f61b6f3d66653f20464"
+    "revision": "2a2c40066de300b446d36d51a51ce03d"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
