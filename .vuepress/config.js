@@ -2,9 +2,9 @@
   title: 'artbg',
   description: '生命不息 学无止境',
   head: [
-    ['script', { src: '/js/custom.js', type: 'text/javascript' }],
+    //icon
     ['link', { rel: 'icon', href: `https://coding.net/u/sclei/p/picb/git/raw/master/heads/head_icon_lilei_2018.jpg` }],
-
+    
     //PWA应用支持
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     //iOS Safari支持
@@ -17,14 +17,17 @@
     ['meta', { name: 'msapplication-TileColor', content: "#FFFFFF" }],
     //PWA应用支持 结束
 
-    ['script', {
-      src: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML',
-      type: 'text/javascript'
-    }],
+    //引入MathJax数学库
+    ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML', type: 'text/javascript' }],
+    //引入自定义js函数文件，存放于.vuepress/public/js目录下
+    ['script', { src: '/js/custom.js', type: 'text/javascript' }],
 
   ],
+  //开启serviceWorker服务
   serviceWorker: true,
+  //网站基地址
   base: '/',
+  //静态文件构建目标地址
   dest: './docs/public',
   // 主题配置
   themeConfig: {
@@ -39,8 +42,8 @@
         items: [
           {
             text: '操作系统', items: [
-              { text: 'kernel_x86', link: '/kernel_x86/' },
-              { text: 'kernel_x86_64', link: '/kernel_x86_64/' },
+              { text: 'Kernel_x86', link: '/kernel_x86/' },
+              { text: 'Kernel_x86_64', link: '/kernel_x86_64/' },
               { text: 'Linux', link: '/Linux/' }
             ]
           }//操作系统结束
@@ -67,8 +70,8 @@
       { text: 'Github', link: 'https://github.com/sclei' },
       { text: 'Coding', link: 'https://coding.net/u/sclei' }
     ],
-    // 侧边栏配置,侧边栏组，不同（导航）页面对应不同的侧边栏
-    // 以对象形式配置，前边的key为nav处的路径,后边提供一个数组作为此侧边栏中的子标题
+    //导航栏配置结束
+    // 侧边栏配置,侧边栏组
     sidebar: {
       '/kernel_x86/': [
         '',
@@ -100,6 +103,9 @@
         '1',
       ],
     },
+    //侧边栏配置结束
+    //侧边栏深度
     sidebarDepth: 2
+
   }
 }
