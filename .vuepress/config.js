@@ -17,8 +17,9 @@
     ['meta', { name: 'msapplication-TileColor', content: "#FFFFFF" }],
     //PWA应用支持 结束
 
-    //引入MathJax数学库
+    //引入MathJax数学库(已更新，用MathJax.vue替代)
     ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML', type: 'text/javascript' }],
+
     //引入自定义js函数文件，存放于.vuepress/public/js目录下
     ['script', { src: '/js/custom.js', type: 'text/javascript' }],
 
