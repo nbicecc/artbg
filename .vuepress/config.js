@@ -23,6 +23,9 @@
     //引入自定义js函数文件，存放于.vuepress/public/js目录下
     ['script', { src: '/js/custom.js', type: 'text/javascript' }],
 
+    //引入cnzz统计代码
+    ['script', { src: 'https://s22.cnzz.com/z_stat.php?id=1273884767&web_id=1273884767', type: 'text/javascript' }],
+
   ],
   //开启serviceWorker服务
   serviceWorker: true,
