@@ -21,11 +21,11 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.2.0/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "4c4909870c87a2a2d32f0cd76f6ac2f2"
+    "revision": "530a8c69c029bc5afcba0fe64492567c"
   },
   {
     "url": "about/index.html",
-    "revision": "83a15cbe93cc93d1a2060a37c95a7895"
+    "revision": "07ce0b5f10e8c6b1d08440c87631c853"
   },
   {
     "url": "assets/css/22.styles.5a6a753a.css",
@@ -92,8 +92,8 @@ self.__precacheManifest = [
     "revision": "10da76b9ee9fbc493f5f8fa8b749e59c"
   },
   {
-    "url": "assets/js/21.8c7983d6.js",
-    "revision": "6244ae3c412221f5cdb5adb42a7bfe47"
+    "url": "assets/js/21.1257f805.js",
+    "revision": "2902dbb218d87d6794363be4e2cf6740"
   },
   {
     "url": "assets/js/3.86aeb167.js",
@@ -124,88 +124,88 @@ self.__precacheManifest = [
     "revision": "0885e2c88724571e969e17193ad15fda"
   },
   {
-    "url": "assets/js/app.0ca00f13.js",
-    "revision": "8e543a76b7d65b9935b21a9b77b257e4"
+    "url": "assets/js/app.db244ed3.js",
+    "revision": "743deebb7212fbbf18bf128e235c06f2"
   },
   {
     "url": "index.html",
-    "revision": "619d6f356d94aa34355904d93f29df07"
+    "revision": "3091811adfea0b98e079dee54949ee19"
   },
   {
     "url": "js/custom.js",
-    "revision": "c6d74904d284506f7ae0b01c8b752602"
+    "revision": "050c08339eda6d1aa42b2ed1759a372e"
   },
   {
     "url": "kernel_x86_64/index.html",
-    "revision": "ad0856d19431112976782d87f1429cbd"
+    "revision": "20079fcd9d17569f4e88a239bbf36d20"
   },
   {
     "url": "kernel_x86_64/x86_64_long_mode.html",
-    "revision": "9ecad63c82697bcbe48d71280f6ef74a"
+    "revision": "7ed9e36c23f13c6bedd85f124a53bfa6"
   },
   {
     "url": "kernel_x86/index.html",
-    "revision": "84ed91a7432d96bed8ba88e1d8fd579e"
+    "revision": "989cc0335163d2745fc915cbcd837ff3"
   },
   {
     "url": "kernel_x86/x86_A20.html",
-    "revision": "9772dcc2e4aba6cf1ecb4a4537215d08"
+    "revision": "c3f638a897cdf0a3e6b3eaed53b48582"
   },
   {
     "url": "kernel_x86/x86_CPUID.html",
-    "revision": "c8145303835d34046ee061d7b33f6aee"
+    "revision": "dc68fb0635856a8fd30e4b4b266d4674"
   },
   {
     "url": "kernel_x86/x86_GDT.html",
-    "revision": "01ec5e4d25fa3dcd632cd356bbb01180"
+    "revision": "c50cdfa20f88c9218054a54c2cfb25f3"
   },
   {
     "url": "kernel_x86/x86_IDT.html",
-    "revision": "87e357e49cd303f02ee452989cf31fc1"
+    "revision": "5d7158d2e4925062fa2a9db3cd526651"
   },
   {
     "url": "kernel_x86/x86_PIC.html",
-    "revision": "a88db0152a46c85a902854a9171c4329"
+    "revision": "0478e2a902561591c338b7520f280c96"
   },
   {
     "url": "Linux/1.html",
-    "revision": "1874fb4563a933070148225966f7ab31"
+    "revision": "6636d501855b1fe76b2a5cb97a073d79"
   },
   {
     "url": "Linux/index.html",
-    "revision": "819faaffef5cf43afe49b1e4e5b8852f"
+    "revision": "11a8f34bef7732968a32faf49cadfdb3"
   },
   {
     "url": "markdown/index.html",
-    "revision": "8575566e445fcb82f07b2c3f627531a4"
+    "revision": "f072e635138898b35f333821dd93079b"
   },
   {
     "url": "markdown/markdown1.html",
-    "revision": "1162d5b40049b5aad23d57f34d1238e4"
+    "revision": "2d586ebdd3bb3b06e98c1337de03bccb"
   },
   {
     "url": "mathjax/index.html",
-    "revision": "a2b510ad044100106d8c9e406a41a0cb"
+    "revision": "7351fb6b1de2b2f23e26dcd93f38a613"
   },
   {
     "url": "ML/elkan.html",
-    "revision": "a5bb47ccaf03a029ede32b47c238cadd"
+    "revision": "0fb25d6208ee4d9b47e4d57361b32480"
   },
   {
     "url": "ML/index.html",
-    "revision": "8d971ed67fa1c6f89c6c064727d1a17e"
+    "revision": "19f193914487976c8e2cc0df8fde57bc"
   },
   {
     "url": "SQLite/1.html",
-    "revision": "db3a18627b1c1fcee1f48c5c7968c48f"
+    "revision": "15b9c21ab81e42e21728de986c2cbf63"
   },
   {
     "url": "SQLite/2.html",
-    "revision": "701beecfb55a077d8ac7ff559f9ecd91"
+    "revision": "24bb052ed7f0d54c9553698f275a3bb1"
   },
   {
     "url": "SQLite/index.html",
-    "revision": "1db0de26c9808b2d599f1950b337674f"
+    "revision": "f330444cd0d38785d64eb3da79995434"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();

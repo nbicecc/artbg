@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[21],{167:function(n,t,e){"use strict";e.r(t);var i={data:function(){return{inner:"adfa"}}},s=e(0),r=Object(s.a)(i,function(){var n=this.$createElement;return(this._self._c||n)("div",{attrs:{id:"cnzz"}},[this._v("\n    "+this._s(this.inner)+"\n")])},[],!1,null,null,null);t.default=r.exports}}]);
