@@ -44,7 +44,7 @@ void main(void)
 点击[这里][1]打开百度搜索，这是我的[Blog][2]
 
   [1]: http://www.baidu.com/        "Baidu"
-  [2]: http://blog.sclei.com/     "Blog"
+  [2]: http://www.sclei.com/     "Blog"
 
 ```
 效果如下：
@@ -52,4 +52,4 @@ void main(void)
 点击[这里][1]打开百度搜索，这是我的[Blog][2]
 
   [1]: http://www.baidu.com/        "Baidu"
-  [2]: http://blog.sclei.com/     "Blog"
+  [2]: http://www.sclei.com/     "Blog"
