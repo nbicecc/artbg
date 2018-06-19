@@ -12,6 +12,9 @@ features:
   details: 可在Android手机Chrome浏览器和iOS 11.3以上系统的Safari浏览器中添加为PWA桌面应用.
 footer: MIT Licensed | Copyright © 2018 Lilei
 sidebar: auto
+meta:
+  - name: baidu-site-verification
+    content: 07M9sEPKHL
 ---
 
 ### 引言

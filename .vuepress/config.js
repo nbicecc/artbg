@@ -4,11 +4,11 @@
   head: [
     //icon
     ['link', { rel: 'icon', href: `https://coding.net/u/sclei/p/picb/git/raw/master/heads/head_icon_lilei_2018.jpg` }],
-    
     //PWA应用支持
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     //iOS Safari支持
     ['meta', { name: 'apple-mobile-web-app-title', content: "artbg" }],
+    
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: "black" }],
     ['link', { rel: 'apple-touch-icon', href: `https://coding.net/u/sclei/p/picb/git/raw/master/heads/head_icon_lilei_2018.jpg` }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: "yes" }],
