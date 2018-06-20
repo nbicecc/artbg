@@ -24,4 +24,8 @@ meta:
 
 
 
+---
+<center>
+Hosted by <a href="https://pages.coding.me"style="font-weight: bold">Coding Pages</a> & <a href="https://pages.github.io"style="font-weight: bold">GitHub Pages</a>
 
+</center>
