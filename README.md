@@ -10,7 +10,7 @@ features:
   details: 摸索机器学习算法 | 捣鼓操作系统
 - title: 本博客支持PWA特性
   details: 可在Android手机Chrome浏览器和iOS 11.3以上系统的Safari浏览器中添加为PWA桌面应用.
-footer: MIT Licensed | Copyright © 2018 Lilei
+footer: MIT Licensed | Copyright © 2018 Lilei | Hosted by Github Pages
 sidebar: auto
 meta:
   - name: baidu-site-verification
@@ -21,11 +21,3 @@ meta:
 > 本仓库内容所有内容均为原创，仅用于记录和展示本人的学习记录、原创博客及项目分析，未经本人允许请勿作他用。欢迎讨论！
 
 [关于我](/about/)
-
-
-
----
-<center>
-Hosted by <a href="https://pages.coding.me"style="font-weight: bold">Coding Pages</a> & <a href="https://pages.github.io"style="font-weight: bold">GitHub Pages</a>
-
-</center>

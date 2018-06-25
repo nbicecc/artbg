@@ -1,4 +1,4 @@
-## Jupyter notebook 及lab的安装、配置与后台运行
+## Jupyter lab的安装、配置与后台运行
 1. 安装
    - 安装conda
    - 用conda安装jupyterlab
