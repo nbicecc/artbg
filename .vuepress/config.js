@@ -88,7 +88,7 @@
       ],
       '/ML/': [
         '',
-        ['/ML/elkan.md', 'Elkan三角形原理加速聚类算法'],
+        'conv_excel',
       ],
       '/markdown/': [
         '',
