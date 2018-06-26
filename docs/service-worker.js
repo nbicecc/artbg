@@ -21,11 +21,11 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.2.0/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "51185b8f711710b378805f360cde6db4"
+    "revision": "3f3bdfccbfc82626f2bf863a1a4eed96"
   },
   {
     "url": "about/index.html",
-    "revision": "d1251ef172ea6d83bc055ed2d33fc24d"
+    "revision": "f2e0b3c600bcba43c5ab1214302de1a3"
   },
   {
     "url": "assets/css/26.styles.60f4185c.css",
@@ -140,12 +140,12 @@ self.__precacheManifest = [
     "revision": "6e68a015c9203bcbfc288283efdaea60"
   },
   {
-    "url": "assets/js/app.ce832a51.js",
-    "revision": "bac7760db337a48836dcebbff91211d3"
+    "url": "assets/js/app.82f31bda.js",
+    "revision": "e6fe3a34f129c4fba0e8508d35d1dfbf"
   },
   {
     "url": "index.html",
-    "revision": "9ad8314e3adba09fc20ebc3c9baa96a4"
+    "revision": "e700d8099d0557498a98b8c3e918573b"
   },
   {
     "url": "js/custom.js",
@@ -153,91 +153,91 @@ self.__precacheManifest = [
   },
   {
     "url": "kernel_x86_64/index.html",
-    "revision": "e36ca22b70a9538f6530a23ff88d0878"
+    "revision": "cfb017f5621d672674ac7f223381313a"
   },
   {
     "url": "kernel_x86_64/x86_64_long_mode.html",
-    "revision": "9d785eb18d2572e20d96b9bd992dffa1"
+    "revision": "706e72dbcc62a1a7bbeb5c974c0d7317"
   },
   {
     "url": "kernel_x86/index.html",
-    "revision": "66ee32721eadbc46efab33376a38ce14"
+    "revision": "a26e579ee317ebcbd9c3b5e43d80d0ca"
   },
   {
     "url": "kernel_x86/x86_A20.html",
-    "revision": "bc3be8839ba2e8fe635410b0f52e956d"
+    "revision": "12762514ac78eb42346094f416431bb6"
   },
   {
     "url": "kernel_x86/x86_CPUID.html",
-    "revision": "13b20ee3ba2ced9e91a96f888fbab780"
+    "revision": "18566f03b3d258dd21cc260601cdb18b"
   },
   {
     "url": "kernel_x86/x86_GDT.html",
-    "revision": "394281bfc81ed25aeecf5562a62c3862"
+    "revision": "351b370556077d58560f3d04288af1d7"
   },
   {
     "url": "kernel_x86/x86_IDT.html",
-    "revision": "93308fada857583d6c925f4adf78e7ff"
+    "revision": "8dfdc02df7ce6134a27f08f3eb8512b9"
   },
   {
     "url": "kernel_x86/x86_PIC.html",
-    "revision": "ee0ef7d540bda7a8a0668c78e9160d5b"
+    "revision": "3cdb3ace5de0009895c7e9f35b9226a9"
   },
   {
     "url": "Linux/1.html",
-    "revision": "82f5180a5e8d58429b09c5e2f5ae8b18"
+    "revision": "c83d6db2332a13195899e9fd3cb0e602"
   },
   {
     "url": "Linux/2.html",
-    "revision": "1c5e052edc06c3755977bbe8cfc0d1e9"
+    "revision": "a1302cde5ce6e98bf77ada89f7753b35"
   },
   {
     "url": "Linux/3.html",
-    "revision": "9092c114235056c282505788b6e7347c"
+    "revision": "577dcd0de7433d0725fe6c84e3e06c6f"
   },
   {
     "url": "Linux/4.html",
-    "revision": "96b239c59cb59abb9b6f161efbc8c7dd"
+    "revision": "47b402a29dcc66169155516e8954fdb1"
   },
   {
     "url": "Linux/index.html",
-    "revision": "79288cf2dfd9d32d3cefc39dd3037c84"
+    "revision": "365e065f7ed260b7efaf661c04e5f631"
   },
   {
     "url": "markdown/index.html",
-    "revision": "e57a4a43eabe8324d4475b8134ca40af"
+    "revision": "9c06ae548555268d68175fa75b8f1b39"
   },
   {
     "url": "markdown/markdown1.html",
-    "revision": "1b0692687bc72ba5dced69938a243b4f"
+    "revision": "9625160657b3dd294c82cb33238c7ab1"
   },
   {
     "url": "mathjax/index.html",
-    "revision": "6615ee2c1188492d38b30328e48b5463"
+    "revision": "45948c144678e5d1069db3bdd683c571"
   },
   {
     "url": "ML/conv_excel.html",
-    "revision": "70c7452e3803a0432cd815963b8213fa"
+    "revision": "dd5e098474b30524e6cf6a0305f8490e"
   },
   {
     "url": "ML/elkan.html",
-    "revision": "ce9d2f15e281d8d0b63aa8e81ea012f0"
+    "revision": "a3f5375af412ed108796cf5d04db83af"
   },
   {
     "url": "ML/index.html",
-    "revision": "ce96629027b4a84ce79ab43d87d4eb44"
+    "revision": "663a65f8061f9caba9cc0fc128fae0ca"
   },
   {
     "url": "SQLite/1.html",
-    "revision": "6b4ec330f6a281bd24eba33573e6bde6"
+    "revision": "3ff3bf6ba393e5bad45e44401e780041"
   },
   {
     "url": "SQLite/2.html",
-    "revision": "2d827bbd5b83bb68a76858cdb5cf73d7"
+    "revision": "5c26b4150f3d5a5a0ad72e62b6ac78b8"
   },
   {
     "url": "SQLite/index.html",
-    "revision": "0bdedd701bedb44704586b9e054a0e59"
+    "revision": "cde12bee5189a4eb696b74c1418f5c21"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
