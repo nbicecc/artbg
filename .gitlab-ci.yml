@@ -1,0 +1,5 @@
+ artifacts:
+    paths:
+    - docs
+  only:
+  - master
