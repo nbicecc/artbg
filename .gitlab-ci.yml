@@ -1,5 +1,6 @@
- artifacts:
+ pages:
+  artifacts:
     paths:
-    - docs
+     - docs
   only:
-  - master
+     - master
