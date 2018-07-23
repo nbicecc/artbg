@@ -8,7 +8,7 @@
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     //iOS Safari支持
     ['meta', { name: 'apple-mobile-web-app-title', content: "artbg" }],
-    
+
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: "black" }],
     ['link', { rel: 'apple-touch-icon', href: `https://coding.net/u/sclei/p/picb/git/raw/master/heads/head_icon_lilei_2018.jpg` }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: "yes" }],
@@ -80,7 +80,8 @@
         'x86_CPUID',
         'x86_GDT',
         'x86_IDT',
-        'x86_PIC'
+        'x86_PIC',
+        'scan_codes_ps2'
       ],
       '/kernel_x86_64/': [
         '',
